@@ -110,5 +110,5 @@ users["Mark"] = {
         }
     ]
 }
-# Note to self, remember the comma (,) and the end of an item on a list/dictionary (unless it's the last item)
+# Note to self, remember the comma (,) and the end of a key-value pair (unless it's the last item)
 print(users["Mark"])
