@@ -87,4 +87,28 @@ users["Erik"]["home_town"] = "Edinburgh"
 print(users["Erik"]["home_town"])
 
 # 9. Add a pet dog to Erik called "fluffy"
+users["Erik"]["pets"].append(
+    {
+    "name":"fluffy",
+    "species":"dog"
+    }
+)
+print(users["Erik"]["pets"])
 # 10. Add another person to the users dictionary
+users["Mark"] = {
+    "twitter": "MarkR",
+    "lottery_numbers": [1, 3, 37, 32, 12, 20],
+    "home_town": "Penicuik",
+    "pets": [
+        {
+            "name": "mr. snuffles",
+            "species": "dog"
+        },
+        {
+            "name": "snowbell",
+            "species": "cat"
+        }
+    ]
+}
+# Note to self, remember the comma (,) and the end of an item on a list/dictionary (unless it's the last item)
+print(users["Mark"])
