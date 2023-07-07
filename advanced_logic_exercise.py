@@ -57,11 +57,13 @@ print(two_next_to_two)
         # if number == 7
             # disable check_7 and reenable check_6
 
+# UPDATE: Realised we didn't need two variables for checking 6 or 7.
+# If we're not looking for 6, then we're looking for 7
 # sum of the sequence
 
 sum_of_sequence = 0
 check_for_6 = True
-check_for_7 = False
+# Checking for 6 when True, checking for 7 when False
 
 for number in numbers:
     if check_for_6 == True:
@@ -69,11 +71,9 @@ for number in numbers:
             sum_of_sequence += number
         else:
             check_for_6 = False
-            check_for_7 = True
-    if check_for_7 == True:
+    if check_for_6 == False:
         if number == 7:
             check_for_6 = True
-            check_for_7 = False
 
 print(sum_of_sequence)
 
