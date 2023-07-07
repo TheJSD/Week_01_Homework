@@ -68,6 +68,15 @@ erik_sorted_lotto_numbers = sorted(users["Erik"]["lottery_numbers"])
 print(erik_sorted_lotto_numbers)
 
 # 6. Return an list of Avril's lottery numbers that are even
+avril_lottery_numbers = users["Avril"]["lottery_numbers"]
+avril_even_numbers =[] #creating an empty list to store Avril's even numbers
+for number in avril_lottery_numbers:
+    if number % 2 == 0:
+    # runs throughs avril's lottery numbers, checks if the numbers are divisable by 2 with no remainder
+    # (this will return even numbers)
+        avril_even_numbers.append(number) #store that number in Avril's even number list
+
+print(avril_even_numbers)
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "fluffy"
