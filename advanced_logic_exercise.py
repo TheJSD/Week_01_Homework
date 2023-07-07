@@ -55,7 +55,7 @@ print(two_next_to_two)
             # disable check_6 and enable check_7
     # if check 7 is true:
         # if number == 7
-            # disable check_7 and reenabled check_6
+            # disable check_7 and reenable check_6
 
 # sum of the sequence
 
@@ -83,3 +83,27 @@ print(sum_of_sequence)
 #    HINT - You will need to track the index throughout the loop.
 #
 #    So [5, 13, 2] would have sum of 5. 
+
+# Pseudocode:
+# Sum of non-13 sequence variable
+# found_13 variable, set to False by default (we haven't found it yet)
+# for number in numbers:
+    # If 13 has not been found previously and number != 13
+        #add to total
+    # If the number == 13
+        #set found_13 to true
+    # If the number != 13 and we found 13 previously
+        #set to found_13 to be false
+
+sum_of_sequence_ignoring_13_and_number_after = 0
+found_13_last_number = False
+
+for number in numbers:
+    if found_13_last_number == False and number != 13:
+        sum_of_sequence_ignoring_13_and_number_after += number
+    if number == 13:
+        found_13_last_number = True
+    if number != 13 and found_13_last_number == True:
+        found_13_last_number = False
+
+print(sum_of_sequence_ignoring_13_and_number_after)
