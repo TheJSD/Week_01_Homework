@@ -11,7 +11,22 @@ for number in numbers:
 print(even_integers)
 
 # 2. Print the difference between the largest and smallest value:
+lowest_number = None
+highest_number = None
+# Setting as an empty value
+for number in numbers:
+    if highest_number == None or number > highest_number:
+        highest_number = number
+        # If the highest number is an empty value, or if the number is greater than the highest number,
+        # Then replace it
+    if lowest_number == None or number < lowest_number:
+        lowest_number = number
+        # If the lowest number is empty, or if the number is less than the lowest number,
+        # Then replace it
 
+print(highest_number - lowest_number)
+# after Googling, found the max()  function exists, but I wanted to do it in the for loop anyway.
+# i.e. could have done print(max(numbers) - min(numbers))
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
 
