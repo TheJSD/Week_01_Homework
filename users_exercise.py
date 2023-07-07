@@ -65,7 +65,7 @@ print(users["Avril"]["pets"][0]["species"])
 # 5. Get the smallest of Erik's lottery numbers
 erik_sorted_lotto_numbers = sorted(users["Erik"]["lottery_numbers"])
 # above creates a new variable, creates a sorted list of Erik's lottery numbers
-print(erik_sorted_lotto_numbers)
+print(erik_sorted_lotto_numbers[0]) #index 0 will be the smallest number
 
 # 6. Return an list of Avril's lottery numbers that are even
 avril_lottery_numbers = users["Avril"]["lottery_numbers"]
